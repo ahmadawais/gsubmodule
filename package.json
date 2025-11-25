@@ -1,0 +1,32 @@
+{
+  "name": "gsubmodule",
+  "version": "0.0.1",
+  "description": "Convert git folders to submodules with separate repos",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "gsubmodule": "./dist/index.js",
+    "gsub": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "test": "vitest"
+  },
+  "keywords": ["git", "submodule", "cli"],
+  "author": "Ahmad Awais <me@AhmadAwais.com> (https://twitter.com/MrAhmadAwais)",
+  "license": "MIT",
+  "packageManager": "pnpm@10.4.1",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.8.0",
+    "commander": "^12.0.0",
+    "picocolors": "^1.1.0"
+  }
+}
